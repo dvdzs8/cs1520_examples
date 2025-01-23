@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Exercise</title>
+<style>
+</style>
+<script type="text/javascript">
+	/** For all of the following, use arrow functions to complete the assigned task
+		* Several test cases are provided for each task, using the `test()` function
+		* listed below.
+		*/
+	function test(number, result, msg) {
+		// Note the use of the ternary operator (? and :), look it up if unsure
+		console.log(`Test ${number}: ${result ? "pass" : "FAIL"}`);
+	}
+
+	function main() {
+		let i = 0;
+		
+		// Assign a function to the variable `foo` that take a single argument and
+		// returns that argument concatenated with "FOO"
+
+		// YOUR CODE HERE
+
+		test(++i, foo("foo") === "fooFOO");
+		test(++i, foo("bar") === "barFOO");
+
+		// Assign a function to the variable `call4me` that takes in two arguments
+		// First, a function
+		// Second, a value
+		// Have this function return the result of calling the function with the specified value
+
+		// YOUR CODE HERE
+
+		test(++i, call4me((a) => a % 2 === 0, 4) === true);
+		test(++i, call4me((b) => b % 2 === 0, 5) === false);
+		test(++i, call4me((c) => c + " CALLED!", "this function was") === "this function was CALLED!");
+
+		// Assign a function to the variable `build_adder`, that takes a single argument and 
+		// returns another function that takes a single argument.
+		// If the argument is between 0 and 5 (inclusive), the returned function should add that value
+		// to its argument
+		// If the argument is < 0 or > 5, the returned function should return "NOPE" for all arguments
+
+		// YOUR CODE HERE
+
+		const addThree = buildAdder(3);
+		test(++i, addThree(1) === 4);
+
+		const addFive = buildAdder(5);
+		test(++i, addFive(5) === 10);
+
+		const addSix = buildAdder(6);
+		test(++i, addSix(1) === "NOPE");
+
+		// Assign a length 6 array of functions to the variable `a`. Each index should store a function
+		// that takes a single argument and returns that argument plus its index value.
+
+		// YOUR CODE HERE
+
+		test(++i, a[0](5) === 5);
+		test(++i, a[3](5) === 8);
+		test(++i, a[5](5) === 10); 
+	}
+
+	main();
+</script>
+</head>
+<body>
+	<h2>Check the JS Console</h2>
+</body>
+</html>

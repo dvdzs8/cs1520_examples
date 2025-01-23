@@ -20,9 +20,14 @@
 	}
 
 	function display() {
+		for (att in this) {
+			console.log(`${att}: ${this[att]}`);
+		}
+		/*
 		console.log(`Name: ${this.name}`);
 		console.log(`Age: ${this.age}`);
 		console.log(`Salary: ${this.salary}`);
+		*/
 	}
 	
 	function show_workers(w) {
