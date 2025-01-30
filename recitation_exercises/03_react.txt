@@ -3,7 +3,7 @@ should work through the official React guide to making a game of Tic-Tac-Toe:
 
 https://react.dev/learn/tutorial-tic-tac-toe
 
-The change you shoudl make from the instructions laid out there is with the
+The change you should make from the instructions laid out there is with the
 initialization and setup. To prepare you for using Vite on the projects,
 you should work on this exercise by creating a new Vite app, and then do the
 following:
