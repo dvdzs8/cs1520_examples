@@ -1,0 +1,16 @@
+To gain a better understanding of React and state management, for this lab, you
+should work through the official React guide to making a game of Tic-Tac-Toe:
+
+https://react.dev/learn/tutorial-tic-tac-toe
+
+The change you shoudl make from the instructions laid out there is with the
+initialization and setup. To prepare you for using Vite on the projects,
+you should work on this exercise by creating a new Vite app, and then do the
+following:
+
+- Move 03_App.jsx to overwrite the contents of src/App.jsx
+- Move 03_index.css to overwrite the contents of src/index.css
+- Remove src/App.css
+- Remove the src/assets folder
+
+From there, build and run your app using the Vite commands covered in lecture!
